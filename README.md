@@ -78,6 +78,19 @@ archinstall --config https://osinstall.jacken.men/arch/config.json
 1. Click on **Begin Installation**.
 1. Wait for the installation to finish.
 
+### Rocky Linux 8
+
+1. Boot up from [ISO](https://rockylinux.org/download/)
+1. Edit the default boot commands by hitting Tab key.
+
+    Append this to the end of the boot options:
+    ```
+    inst.ks=https://osinstall.jacken.men/rocky8/ks.cfg
+    ```
+    Hit Enter key.
+
+1. Wait for the installation to finish.
+
 ### Ubuntu Linux 18.04
 
 1. Boot up from [ISO](https://cdimage.ubuntu.com/releases/18.04/release/) (Note: the "**Live** Server" ISO won't work)
