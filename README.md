@@ -13,6 +13,18 @@ archinstall --config https://osinstall.jacken.men/arch/config.json
 ```
 1. Wait for the installation to finish.
 
+### Debian 10 Buster
+
+1. Boot up from [ISO](https://www.debian.org/releases/buster/debian-installer/)
+1. Choose Advanced options->Automated install
+1. Choose ``enp0s3`` interface in the installer.
+1. Input the URL of preconfiguration file:
+
+    ```
+    https://osinstall.jacken.men/debian10/preseed.cfg
+    ```
+1. Wait for the installation to finish.
+
 ### Ubuntu Linux 18.04
 
 1. Boot up from [ISO](https://cdimage.ubuntu.com/releases/18.04/release/) (Note: the "**Live** Server" ISO won't work)
