@@ -63,6 +63,19 @@ archinstall --config https://osinstall.jacken.men/arch/config.json
 
 1. Wait for the installation to finish.
 
+### Oracle Linux 8
+
+1. Boot up from [ISO](https://yum.oracle.com/oracle-linux-isos.html)
+1. Edit the default boot commands by hitting Tab key.
+
+    Append this to the end of the boot options:
+    ```
+    inst.ks=https://osinstall.jacken.men/ol8/ks.cfg
+    ```
+    Hit Enter key.
+
+1. Wait for the installation to finish.
+
 ### Red Hat Enterprise Linux 8
 
 1. Boot up from [ISO](https://developers.redhat.com/products/rhel/download)
