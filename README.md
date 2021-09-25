@@ -13,6 +13,19 @@ archinstall --config https://osinstall.jacken.men/arch/config.json
 ```
 1. Wait for the installation to finish.
 
+### CentOS 8
+
+1. Boot up from [ISO](http://isoredirect.centos.org/centos/8/isos/x86_64/)
+1. Edit the default boot commands by hitting Tab key.
+
+    Append this to the end of the boot options:
+    ```
+    inst.ks=https://osinstall.jacken.men/centos8/ks.cfg
+    ```
+    Hit Enter key.
+
+1. Wait for the installation to finish.
+
 ### Debian 10 Buster
 
 1. Boot up from [ISO](https://www.debian.org/releases/buster/debian-installer/)
