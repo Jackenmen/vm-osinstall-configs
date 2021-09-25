@@ -37,6 +37,19 @@ archinstall --config https://osinstall.jacken.men/arch/config.json
     ```
 1. Wait for the installation to finish.
 
+### Fedora Server 33
+
+1. Boot up from [ISO](https://download.fedoraproject.org/pub/fedora/linux/releases/33/Server/x86_64/iso/)
+1. Edit the default boot commands by hitting Tab key.
+
+    Append this to the end of the boot options:
+    ```
+    inst.ks=https://osinstall.jacken.men/fedora33/ks.cfg
+    ```
+    Hit Enter key.
+
+1. Wait for the installation to finish.
+
 ### Ubuntu Linux 18.04
 
 1. Boot up from [ISO](https://cdimage.ubuntu.com/releases/18.04/release/) (Note: the "**Live** Server" ISO won't work)
