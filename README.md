@@ -13,6 +13,19 @@ archinstall --config https://osinstall.jacken.men/arch/config.json
 ```
 1. Wait for the installation to finish.
 
+### CentOS 7
+
+1. Boot up from [ISO](http://isoredirect.centos.org/centos/7/isos/x86_64/)
+1. Edit the default boot commands by hitting Tab key.
+
+    Append this to the end of the boot options:
+    ```
+    ip=enp0s3:dhcp inst.ks=https://osinstall.jacken.men/centos7/ks.cfg
+    ```
+    Hit Enter key.
+
+1. Wait for the installation to finish.
+
 ### CentOS 8
 
 1. Boot up from [ISO](http://isoredirect.centos.org/centos/8/isos/x86_64/)
