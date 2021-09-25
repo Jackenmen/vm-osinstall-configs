@@ -128,6 +128,39 @@ archinstall --config https://osinstall.jacken.men/arch/config.json
 
 1. Wait for the installation to finish.
 
+### openSUSE Leap 15.2
+
+1. Boot up from [ISO](https://download.opensuse.org/distribution/leap/15.2/iso/openSUSE-Leap-15.2-NET-x86_64-Current.iso)
+1. Select **Installation**, type these boot options and hit Enter key:
+
+    ```
+    autoyast=https://osinstall.jacken.men/opensuse-leap152/autoinst.xml
+    ```
+
+1. Wait for the installation to finish.
+
+### openSUSE Leap 15.3
+
+1. Boot up from [ISO](https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-NET-x86_64-Current.iso)
+1. Select **Installation**, type these boot options and hit Enter key:
+
+    ```
+    autoyast=https://osinstall.jacken.men/opensuse-leap153/autoinst.xml
+    ```
+
+1. Wait for the installation to finish.
+
+### openSUSE Tumbleweed
+
+1. Boot up from [ISO](https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-NET-x86_64-Current.iso)
+1. Select **Installation**, type these boot options and hit Enter key:
+
+    ```
+    autoyast=https://osinstall.jacken.men/opensuse-tumbleweed/autoinst.xml
+    ```
+
+1. Wait for the installation to finish.
+
 ### Red Hat Enterprise Linux 8
 
 1. Boot up from [ISO](https://developers.redhat.com/products/rhel/download)

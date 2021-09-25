@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE profile>
+<profile xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
+  <general>
+    <mode>
+      <confirm config:type="boolean">false</confirm>
+    </mode>
+  </general>
+  <keyboard>
+    <keymap>polish</keymap>
+  </keyboard>
+  <language>
+    <language>en_US</language>
+    <languages/>
+  </language>
+  <networking>
+    <dns>
+      <hostname>opensuse-leap153</hostname>
+    </dns>
+    <interfaces config:type="list">
+      <interface>
+        <bootproto>dhcp</bootproto>
+        <name>eth0</name>
+        <startmode>auto</startmode>
+      </interface>
+      <interface>
+        <bootproto>dhcp</bootproto>
+        <name>eth1</name>
+        <startmode>auto</startmode>
+      </interface>
+    </interfaces>
+    <net-udev config:type="list">
+      <rule>
+        <name>eth0</name>
+        <rule>KERNELS</rule>
+        <value>0000:00:03.0</value>
+      </rule>
+      <rule>
+        <name>eth1</name>
+        <rule>KERNELS</rule>
+        <value>0000:00:08.0</value>
+      </rule>
+    </net-udev>
+  </networking>
+  <services-manager>
+    <services>
+      <enable config:type="list">
+        <service>sshd</service>
+      </enable>
+    </services>
+  </services-manager>
+  <software>
+    <install_recommended config:type="boolean">true</install_recommended>
+    <patterns config:type="list">
+      <pattern>base</pattern>
+    </patterns>
+    <packages config:type="list">
+      <package>sudo</package>
+      <package>openssh</package>
+    </packages>
+  </software>
+  <timezone>
+    <hwclock>UTC</hwclock>
+    <timezone>Europe/Warsaw</timezone>
+  </timezone>
+  <users config:type="list">
+    <user>
+      <fullname>vm</fullname>
+      <gid>100</gid>
+      <home>/home/vm</home>
+      <shell>/bin/bash</shell>
+      <uid>1000</uid>
+      <username>vm</username>
+      <user_password>vm</user_password>
+    </user>
+    <user>
+      <fullname>root</fullname>
+      <gid>0</gid>
+      <home>/root</home>
+      <shell>/bin/bash</shell>
+      <uid>0</uid>
+      <username>root</username>
+      <user_password>vm</user_password>
+    </user>
+  </users>
+</profile>
