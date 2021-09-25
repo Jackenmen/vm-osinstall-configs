@@ -4,6 +4,19 @@ OS install configurations for my local VMs that I use for testing.
 
 ## How to use
 
+### AlmaLinux 8
+
+1. Boot up from [ISO](https://mirrors.almalinux.org/isos/x86_64/8.4.html)
+1. Edit the default boot commands by hitting Tab key.
+
+    Append this to the end of the boot options:
+    ```
+    inst.ks=https://osinstall.jacken.men/alma8/ks.cfg
+    ```
+    Hit Enter key.
+
+1. Wait for the installation to finish.
+
 ### Arch Linux
 
 1. Boot up from [ISO](https://archlinux.org/download/)
