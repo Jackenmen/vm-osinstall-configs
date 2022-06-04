@@ -243,3 +243,15 @@ archinstall --config https://osinstall.jacken.men/arch/config.json
     ```
     Hit Enter key.
 1. Wait for the installation to finish.
+
+### Ubuntu Linux 22.04
+
+1. Boot up from [ISO](https://releases.ubuntu.com/jammy/)
+1. Edit the default boot commands by hitting e.
+
+    Go to the line starting with `linux` and append this to the end of it (slash at the end is important):
+    ```
+    autoinstall ds='nocloud-net;s=https://osinstall.jacken.men/ubuntu2204/'
+    ```
+    Hit F10 key.
+1. Wait for the installation to finish.

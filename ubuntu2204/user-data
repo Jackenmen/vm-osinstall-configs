@@ -1,0 +1,15 @@
+#cloud-config
+autoinstall:
+  version: 1
+  keyboard:
+    layout: pl
+  storage:
+    layout:
+      name: direct
+  identity:
+    hostname: ubuntu2204
+    username: vm
+    # plain_password: vm
+    password: "$6$bOFMvN/xjCjYXF$0tviuHjUKAeKmTv0g4NCf7E71VlqxCEVFm7xGlcqpSrVO7tISDJBsiMjmQjA7LSIA8UNG8ZapZNL4LjL2W82L1"
+  ssh:
+    install-server: true
