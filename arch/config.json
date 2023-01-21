@@ -1,35 +1,31 @@
 {
     "bootloader": "grub-install",
-    "filesystem": "ext4",
-    "harddrive": {
-        "path": "/dev/sda"
-    },
     "hostname": "arch",
     "kernels": [
         "linux"
     ],
-    "keyboard-language": "pl",
-    "mirror-region": {
-        "Worldwide": {
-            "https://mirror.rackspace.com/archlinux/$repo/os/$arch": true
-        }
-    },
+    "keyboard-layout": "pl",
     "nic": {
-        "NetworkManager": true
+        "type": "nm",
+        "dhcp": true
     },
     "ntp": true,
     "packages": [
         "nano",
         "openssh"
     ],
+    "profile": "minimal",
     "services": [
         "sshd"
     ],
-    "superusers": {
-        "vm": {
-            "!password": "vm"
-        }
-    },
+    "sys-encoding": "utf-8",
+    "sys-language": "en_US",
     "timezone": "Europe/Warsaw",
-    "users": {}
+    "!users": [
+        {
+            "username": "vm",
+            "!password": "vm",
+            "sudo": true
+        }
+    ]
 }
