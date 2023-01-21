@@ -1,19 +1,10 @@
 {
     "bootloader": "grub-install",
-    "filesystem": "ext4",
-    "harddrive": {
-        "path": "/dev/sda"
-    },
     "hostname": "arch",
     "kernels": [
         "linux"
     ],
     "keyboard-language": "pl",
-    "mirror-region": {
-        "Worldwide": {
-            "https://mirror.rackspace.com/archlinux/$repo/os/$arch": true
-        }
-    },
     "nic": {
         "NetworkManager": true
     },
@@ -22,14 +13,18 @@
         "nano",
         "openssh"
     ],
+    "plugin": "https://osinstall.jacken.men/arch/plugin.py",
+    "profile": "minimal",
     "services": [
         "sshd"
     ],
-    "superusers": {
-        "vm": {
-            "!password": "vm"
-        }
-    },
+    "silent": true,
     "timezone": "Europe/Warsaw",
-    "users": {}
+    "!users": [
+        {
+            "username": "vm",
+            "!password": "vm",
+            "sudo": true
+        }
+    ]
 }
