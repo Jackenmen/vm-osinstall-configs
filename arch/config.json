@@ -14,6 +14,7 @@
         "nano",
         "openssh"
     ],
+    "plugin": "https://osinstall.jacken.men/arch/plugin.py",
     "profile": "minimal",
     "services": [
         "sshd"
