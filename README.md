@@ -33,7 +33,7 @@ archinstall --config https://osinstall.jacken.men/arch/config.json
 
     Append this to the end of the boot options:
     ```
-    ip=enp0s3:dhcp inst.ks=https://osinstall.jacken.men/centos7/ks.cfg
+    ip=eth0:dhcp inst.ks=https://osinstall.jacken.men/centos7/ks.cfg
     ```
     Hit Enter key.
 
