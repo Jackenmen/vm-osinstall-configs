@@ -82,7 +82,7 @@ archinstall --config https://osinstall.jacken.men/arch/config.json
 
 1. Boot up from [ISO](https://www.debian.org/releases/buster/debian-installer/)
 1. Choose Advanced options->Automated install
-1. Choose ``enp0s3`` interface in the installer.
+1. (if on VirtualBox) Choose ``enp0s3`` interface in the installer.
 1. Input the URL of preconfiguration file:
 
     ```
@@ -94,7 +94,7 @@ archinstall --config https://osinstall.jacken.men/arch/config.json
 
 1. Boot up from [ISO](https://www.debian.org/releases/bullseye/debian-installer/)
 1. Choose Advanced options->Automated install
-1. Choose ``enp0s3`` interface in the installer.
+1. (if on VirtualBox) Choose ``enp0s3`` interface in the installer.
 1. Input the URL of preconfiguration file:
 
     ```

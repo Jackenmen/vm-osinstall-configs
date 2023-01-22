@@ -7,10 +7,14 @@ source /etc/network/interfaces.d/*
 auto lo
 iface lo inet loopback
 
-# The primary network interface
+# The primary network interface on QEMU
+allow-hotplug enp1s0
+iface enp1s0 inet dhcp
+
+# The primary network interface on VirtualBox
 allow-hotplug enp0s3
 iface enp0s3 inet dhcp
 
-# The Host-only network interface
+# The Host-only network interface on VirtualBox
 allow-hotplug enp0s8
 iface enp0s8 inet dhcp
